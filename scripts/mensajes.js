@@ -4,10 +4,9 @@ const searchChat = document.getElementById("searchChat");
 if (chatItems.length > 0) {
     chatItems.forEach(item => {
         item.addEventListener("click", () => {
-            const url = item.getAttribute("data-url");
-            if (url) {
-                window.location.href = url;
-            }
+            const name = item.getAttribute("data-name") || "Chat";
+            const avatar = item.getAttribute("data-avatar") || "/images/icono_perfil_usuario.svg";
+            window.location.href = `/page/chat.html?name=${encodeURIComponent(name)}&avatar=${encodeURIComponent(avatar)}`;
         });
     });
 }

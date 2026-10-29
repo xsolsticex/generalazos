@@ -3,6 +3,21 @@ const inputField = document.querySelector('footer input');
 const sendBtn = document.querySelector('footer button');
 const mainContainer = document.querySelector('.main');
 
+// Read URL query parameters for contact details
+const urlParams = new URLSearchParams(window.location.search);
+const nameParam = urlParams.get('name');
+const avatarParam = urlParams.get('avatar');
+
+if (nameParam) {
+    const nameSpan = document.querySelector('header .profile span');
+    if (nameSpan) nameSpan.textContent = nameParam;
+}
+
+if (avatarParam) {
+    const avatarImg = document.querySelector('header .profile img');
+    if (avatarImg) avatarImg.src = avatarParam;
+}
+
 if (backBtn) {
     backBtn.addEventListener('click', () => {
         window.location.href = '/page/mensajes.html';

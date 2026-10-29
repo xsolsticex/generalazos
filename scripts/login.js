@@ -2,7 +2,7 @@ const start = document.getElementById("start");
 
 if (start) {
     start.addEventListener("click", () => {
-        window.location.href = "/page/principal.html";
+        window.location.href = "/page/info.html";
     });
 }
 
