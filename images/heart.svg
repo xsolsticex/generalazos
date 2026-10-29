@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 500" width="600" height="500">
+  <title>Corazón formado por dos personas stickman</title>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="29">
+    <g stroke="#19C5C7">
+      <path d="M282 150 C230 88 190 101 156 156 C116 220 132 279 188 313 C230 338 267 369 300 421"/>
+      <path d="M155 156 L70 223"/>
+      <path d="M188 313 L119 414"/>
+    </g>
+    <g stroke="#9147D6">
+      <path d="M318 150 C370 88 410 101 444 156 C484 220 468 279 412 313 C370 338 333 369 300 421"/>
+      <path d="M445 156 L530 223"/>
+      <path d="M412 313 L481 414"/>
+    </g>
+  </g>
+  <circle cx="111" cy="112" r="39" fill="#19C5C7"/>
+  <circle cx="489" cy="112" r="39" fill="#9147D6"/>
+</svg>

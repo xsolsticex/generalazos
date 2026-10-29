@@ -1,0 +1,16 @@
+{
+  "name": "GeneraLazos",
+  "short_name": "GeneraLazos",
+  "description": "Jovenes y mayores, juntos en nuevas aventuras",
+  "start_url": "/page/login.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#8a2be2",
+  "icons": [
+    {
+      "src": "/images/heart.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}

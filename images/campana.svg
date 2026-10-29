@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Campana dorada">
+<defs><linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#FFE875"/><stop offset=".48" stop-color="#FFC323"/><stop offset="1" stop-color="#F19A00"/></linearGradient><linearGradient id="rim" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#FFE679"/><stop offset="1" stop-color="#F3A000"/></linearGradient></defs>
+<path d="M110 43V29a18 18 0 0 1 36 0v14" fill="none" stroke="#EFA000" stroke-width="12" stroke-linecap="round"/>
+<path d="M128 40c-43 0-68 31-71 78-3 43-15 69-32 88h206c-17-19-29-45-32-88-3-47-28-78-71-78Z" fill="url(#gold)" stroke="#EFA000" stroke-width="3"/>
+<path d="M81 110c3-26 15-42 34-49" fill="none" stroke="#FFF3A7" stroke-width="12" stroke-linecap="round" opacity=".8"/>
+<ellipse cx="128" cy="206" rx="105" ry="20" fill="url(#rim)"/>
+<path d="M43 210q85-30 170 0" fill="none" stroke="#FFE77D" stroke-width="9" stroke-linecap="round"/>
+<circle cx="128" cy="220" r="19" fill="#F6A400"/><circle cx="122" cy="214" r="10" fill="#FFD956"/>
+</svg>

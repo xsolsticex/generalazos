@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal - GeneraLazos</title>
+    <link rel="manifest" href="/manifest.json">
+    <meta name="theme-color" content="#8a2be2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/styles/principal.css">
+</head>
+
+<body>
+    <div class="main">
+        <header>
+            <div class="logo">
+                <img src="/images/heart.svg" alt="">
+                <span>Genera<span class="subtext">Lazos</span></span>
+            </div>
+
+            <div class="profile">
+                <img src="/images/campana.svg" alt="">
+                <img id="profile" src="/images/icono_perfil_usuario.svg" alt="" srcset="">
+            </div>
+        </header>
+        <div class="principal">
+            <h3>!Hola Usuario¡</h3>
+            <small>¿Que te gustaría hacer hoy?</small>
+            <div class="search-container">
+                <img src="/images/lupa.svg" alt="Buscar">
+                <input type="search" id="searchInput" placeholder="Buscar actividades, personas o lugares">
+            </div>
+            <div class="iconos">
+                <div class="actividad">
+                    <div class="icono paseos"><img src="/images/campana.svg" alt=""></div>
+                    <small>Paseos</small>
+                </div>
+                <div class="actividad ">
+                    <div class="icono cultura"><img src="/images/campana.svg" alt=""></div>
+                    <small>Cultura</small>
+                </div>
+                <div class="actividad ">
+                    <div class="icono deportes"><img src="/images/campana.svg" alt=""></div>
+                    <small>Deportes</small>
+                </div>
+                <div class="actividad ">
+                    <div class="icono talleres"><img src="/images/campana.svg" alt=""></div>
+                    <small>Talleres</small>
+                </div>
+                <div class="actividad ">
+                    <div class="icono otros"><img src="/images/campana.svg" alt=""></div>
+                    <small>Otros</small>
+                </div>
+
+            </div>
+        </div>
+        <div class="actividades">
+            <div class="actividades-header">
+                <small><span>Activiades cerca de ti</span></small>
+                <small>Ver todas</small>
+            </div>
+            <div class="listado">
+                <div class="card">
+                    <img src="/images/joven_anciano_jardineria_9x16.svg" alt="">
+                    <div class="description">
+                        <div class="description-title">
+                            <p>Paseo matutino por el parque</p><img src="/images/corazon.svg" alt="">
+                        </div>
+
+                        <p>Disfruta de una caminata tranquila al aire libre conversando y compartiendo historias.</p>
+                        <div class="ubicacion">
+                            <div class="meta-item">
+                                <img src="/images/ubicacion.svg" alt="Distancia">
+                                <span>1.2 Km</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/calendario.svg" alt="Día">
+                                <span class="dia">Hoy</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/reloj.svg" alt="Hora">
+                                <span>10:00</span>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <div class="categoria paseos">Paseos</div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="/images/joven_anciano_jardineria_9x16.svg" alt="">
+                    <div class="description">
+                        <div class="description-title">
+                            <p>Exposición de arte e historia</p><img src="/images/corazon.svg" alt="">
+                        </div>
+
+                        <p>Recorrido guiado por las salas históricas descubriendo el patrimonio de la ciudad.</p>
+                        <div class="ubicacion">
+                            <div class="meta-item">
+                                <img src="/images/ubicacion.svg" alt="Distancia">
+                                <span>2.5 Km</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/calendario.svg" alt="Día">
+                                <span class="dia">Mañana</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/reloj.svg" alt="Hora">
+                                <span>17:00</span>
+                            </div>
+                        </div>
+                        <div class="categories ">
+                            <div class="categoria cultura">Cultura</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/joven_anciano_jardineria_9x16.svg" alt="">
+                    <div class="description">
+                        <div class="description-title">
+                            <p>Taller de huerto urbano</p><img src="/images/corazon.svg" alt="">
+                        </div>
+
+                        <p>Aprende técnicas sencillas para cultivar plantas y flores en espacios reducidos.</p>
+                        <div class="ubicacion">
+                            <div class="meta-item">
+                                <img src="/images/ubicacion.svg" alt="Distancia">
+                                <span>0.8 Km</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/calendario.svg" alt="Día">
+                                <span class="dia">Jueves</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/reloj.svg" alt="Hora">
+                                <span>11:30</span>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <div class="categoria talleres">Talleres</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/joven_anciano_jardineria_9x16.svg" alt="">
+                    <div class="description">
+                        <div class="description-title">
+                            <p>Tarde de juegos de mesa</p><img src="/images/corazon.svg" alt="">
+                        </div>
+
+                        <p>Comparte partidas amistosas de dominó, cartas y juegos de ingenio con café.</p>
+                        <div class="ubicacion">
+                            <div class="meta-item">
+                                <img src="/images/ubicacion.svg" alt="Distancia">
+                                <span>1.9 Km</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/calendario.svg" alt="Día">
+                                <span class="dia">Viernes</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/reloj.svg" alt="Hora">
+                                <span>16:00</span>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <div class="categoria otros">Otros</div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/images/joven_anciano_jardineria_9x16.svg" alt="">
+                    <div class="description">
+                        <div class="description-title">
+                            <p>Yoga y movilidad suave</p><img src="/images/corazon.svg" alt="">
+                        </div>
+
+                        <p>Sesión de estiramientos y bienestar adaptada para todos los niveles en el parque.</p>
+                        <div class="ubicacion">
+                            <div class="meta-item">
+                                <img src="/images/ubicacion.svg" alt="Distancia">
+                                <span>3.1 Km</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/calendario.svg" alt="Día">
+                                <span class="dia">Sábado</span>
+                            </div>
+                            <div class="meta-item">
+                                <img src="/images/reloj.svg" alt="Hora">
+                                <span>09:00</span>
+                            </div>
+                        </div>
+                        <div class="categories">
+                            <div class="categoria deportes">Deportes</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <div class="icon active" id="nav-inicio">
+            <img src="/images/casa.svg" alt="">
+            <span>Inicio</span>
+        </div>
+        <div class="icon" id="nav-explorar">
+            <img src="/images/lupa.svg" alt="">
+            <span>Explorar</span>
+        </div>
+        <div class="icon" id="nav-mensajes">
+            <img src="/images/chat.svg" alt="">
+            <span>Mensajes</span>
+        </div>
+        <div class="icon" id="nav-perfil">
+            <img src="/images/perfil.svg" alt="">
+            <span>Mi perfil</span>
+        </div>
+    </footer>
+
+    <script src="/scripts/principal.js"></script>
+</body>
+
+</html>
