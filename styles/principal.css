@@ -21,6 +21,7 @@ body {
 
 .main {
     width: 100%;
+    padding: 10px;
     padding-bottom: 90px;
 }
 
@@ -34,7 +35,8 @@ header {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding: 5px;
+    align-items: center;
+    padding: 5px 10px;
 }
 
 .principal {
@@ -47,7 +49,31 @@ header {
 .logo {
     display: flex;
     align-items: center;
+    gap: 8px;
 
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    span {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+        cursor: pointer;
+    }
 }
 
 
