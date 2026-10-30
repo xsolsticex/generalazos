@@ -346,6 +346,38 @@ footer {
     z-index: 100;
 }
 
+.notification-badge {
+    position: absolute;
+    top: -2px;
+    right: 15%;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.65rem;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.notification-badge-header {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    background-color: #ef4444;
+    color: white;
+    font-size: 0.6rem;
+    font-weight: bold;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .description-title img {
     width: 24px;
     height: 24px;
