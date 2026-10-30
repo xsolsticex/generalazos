@@ -6,15 +6,19 @@ if (swiperEl && typeof Swiper !== 'undefined') {
         allowTouchMove: true,
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 3500,
             disableOnInteraction: false,
         },
         speed: 600,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
     });
 }
 
-const siguienteBtn = document.querySelector('.bottom button');
-const saltarSpan = document.querySelector('.bottom span');
+const siguienteBtn = document.getElementById('siguienteBtn');
+const saltarSpan = document.getElementById('saltarSpan');
 
 if (siguienteBtn) {
     siguienteBtn.addEventListener('click', () => {
