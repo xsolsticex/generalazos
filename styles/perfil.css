@@ -129,24 +129,6 @@ header {
     flex-direction: column;
 }
 
-footer {
-    background-color: rgba(2, 2, 2, 0.8);
-    color: white;
-    padding: 5px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    font-size: small;
-
-    img {
-    width: 100%;
-    max-width: 28px;
-    object-fit: cover;
-}
-}
-
 .icon {
     display: flex;
     flex-direction: column;
@@ -154,17 +136,41 @@ footer {
     cursor: pointer;
     opacity: 0.6;
     transition: opacity 0.2s, transform 0.2s;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    &.active {
+        opacity: 1;
+        span {
+            font-weight: bold;
+            color: #c084fc;
+        }
+    }
+
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 0.75rem;
+    }
 }
 
-.icon:hover {
-    opacity: 0.9;
-}
-
-.icon.active {
-    opacity: 1;
-}
-
-.icon.active span {
-    font-weight: bold;
-    color: #c084fc;
+footer {
+    background-color: rgba(2, 2, 2, 0.8);
+    color: white;
+    padding: 8px 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: small;
+    z-index: 100;
 }

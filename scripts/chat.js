@@ -2,6 +2,7 @@ const backBtn = document.querySelector('header .back button');
 const inputField = document.querySelector('footer input');
 const sendBtn = document.querySelector('footer button');
 const mainContainer = document.querySelector('.main');
+const chat = document.getElementById("chat");
 
 // Read URL query parameters for contact details
 const urlParams = new URLSearchParams(window.location.search);
@@ -38,7 +39,7 @@ function sendMessage() {
     `;
     mainContainer.appendChild(msgDiv);
     inputField.value = '';
-    mainContainer.scrollTop = mainContainer.scrollHeight;
+    scrollToBottom();
 }
 
 if (sendBtn) {
@@ -53,8 +54,25 @@ if (inputField) {
     });
 }
 
+function scrollToBottom() {
+    if (!chat) return;
+    chat.scrollTo({
+        top: chat.scrollHeight,
+        behavior: "smooth"
+    });
+}
+
 function escapeHTML(str) {
     return str.replace(/[&<>'"]/g, 
         tag => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[tag] || tag)
     );
 }
+
+// Ensure autoscroll to bottom on page load
+window.addEventListener('load', () => {
+    scrollToBottom();
+});
+
+scrollToBottom();
+requestAnimationFrame(scrollToBottom);
+setTimeout(scrollToBottom, 50);

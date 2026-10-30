@@ -6,7 +6,17 @@ const searchInput = document.getElementById("searchInput");
 if (cards.length > 0) {
     cards.forEach((item) => {
         item.addEventListener("click", () => {
-            window.location.href = "/page/actividad.html";
+            const title = item.querySelector(".description-title p")?.textContent || "Actividad";
+            const desc = item.querySelector(".description > p")?.textContent || "Descripción de la actividad";
+            const image = item.querySelector("img")?.src || "/images/background3.png";
+            const category = item.querySelector(".categoria")?.textContent || "General";
+            const distance = item.querySelector(".ubicacion .meta-item span")?.textContent || "1.0 Km";
+            const day = item.querySelector(".ubicacion .dia")?.textContent || "Hoy";
+            const time = item.querySelector(".ubicacion .meta-item:last-child span")?.textContent || "10:00";
+            const datetime = `${day} · ${time}`;
+
+            const url = `/page/actividad.html?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(desc)}&image=${encodeURIComponent(image)}&category=${encodeURIComponent(category)}&distance=${encodeURIComponent(distance)}&datetime=${encodeURIComponent(datetime)}`;
+            window.location.href = url;
         });
     });
 }
@@ -48,6 +58,6 @@ const navMensajes = document.getElementById("nav-mensajes");
 const navPerfil = document.getElementById("nav-perfil");
 
 if (navInicio) navInicio.addEventListener("click", () => window.location.href = "/page/principal.html");
-if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "/page/principal.html");
+if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "/page/explorar.html");
 if (navMensajes) navMensajes.addEventListener("click", () => window.location.href = "/page/mensajes.html");
 if (navPerfil) navPerfil.addEventListener("click", () => window.location.href = "/page/perfil.html");

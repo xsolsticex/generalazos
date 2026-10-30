@@ -190,6 +190,7 @@ img {
     padding: 5px;
     transform: scale(.9);
     box-shadow: 0px 16px 16px rgba(0, 0, 0, 0.3);
+    font-size: small;
 }
 
 .description-title {
@@ -297,36 +298,43 @@ img {
     cursor: pointer;
     opacity: 0.6;
     transition: opacity 0.2s, transform 0.2s;
-}
 
-.icon:hover {
-    opacity: 0.9;
-}
+    &:hover {
+        opacity: 0.9;
+    }
 
-.icon.active {
-    opacity: 1;
-}
+    &.active {
+        opacity: 1;
+        span {
+            font-weight: bold;
+            color: #c084fc;
+        }
+    }
 
-.icon.active span {
-    font-weight: bold;
-    color: #c084fc;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 0.75rem;
+    }
 }
 
 footer {
     background-color: rgba(2, 2, 2, 0.8);
     color: white;
-    padding: 5px;
+    padding: 8px 5px;
     position: fixed;
     bottom: 0;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     font-size: small;
-    span{
-    font-weight: normal;
-    }
-
-
+    z-index: 100;
 }
 
 .description-title img {

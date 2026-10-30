@@ -169,7 +169,7 @@ header {
     align-items: center;
     cursor: pointer;
     opacity: 0.6;
-    transition: opacity 0.2s;
+    transition: opacity 0.2s, transform 0.2s;
 
     &:hover {
         opacity: 0.9;
@@ -186,6 +186,12 @@ header {
     img {
         width: 24px;
         height: 24px;
+        object-fit: contain;
+    }
+
+    span {
+        font-weight: normal;
+        font-size: 0.75rem;
     }
 }
 
@@ -198,5 +204,7 @@ footer {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     font-size: small;
+    z-index: 100;
 }

@@ -33,6 +33,6 @@ const navMensajes = document.getElementById("nav-mensajes");
 const navPerfil = document.getElementById("nav-perfil");
 
 if (navInicio) navInicio.addEventListener("click", () => window.location.href = "/page/principal.html");
-if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "/page/principal.html");
+if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "/page/explorar.html");
 if (navMensajes) navMensajes.addEventListener("click", () => window.location.href = "/page/mensajes.html");
 if (navPerfil) navPerfil.addEventListener("click", () => window.location.href = "/page/perfil.html");
