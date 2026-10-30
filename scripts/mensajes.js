@@ -6,7 +6,7 @@ if (chatItems.length > 0) {
         item.addEventListener("click", () => {
             const name = item.getAttribute("data-name") || "Chat";
             const avatar = item.getAttribute("data-avatar") || "/images/icono_perfil_usuario.svg";
-            window.location.href = `/page/chat.html?name=${encodeURIComponent(name)}&avatar=${encodeURIComponent(avatar)}`;
+            window.location.href = `chat.html?name=${encodeURIComponent(name)}&avatar=${encodeURIComponent(avatar)}`;
         });
     });
 }
@@ -32,7 +32,7 @@ const navExplorar = document.getElementById("nav-explorar");
 const navMensajes = document.getElementById("nav-mensajes");
 const navPerfil = document.getElementById("nav-perfil");
 
-if (navInicio) navInicio.addEventListener("click", () => window.location.href = "/page/principal.html");
-if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "/page/explorar.html");
-if (navMensajes) navMensajes.addEventListener("click", () => window.location.href = "/page/mensajes.html");
-if (navPerfil) navPerfil.addEventListener("click", () => window.location.href = "/page/perfil.html");
+if (navInicio) navInicio.addEventListener("click", () => window.location.href = "principal.html");
+if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "explorar.html");
+if (navMensajes) navMensajes.addEventListener("click", () => window.location.href = "mensajes.html");
+if (navPerfil) navPerfil.addEventListener("click", () => window.location.href = "perfil.html");

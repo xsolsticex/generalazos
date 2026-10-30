@@ -3,12 +3,12 @@ const enviarMsgBtn = document.querySelector('.info .content button');
 
 if (backBtn) {
     backBtn.addEventListener('click', () => {
-        window.location.href = '/page/principal.html';
+        window.location.href = 'principal.html';
     });
 }
 
 if (enviarMsgBtn) {
     enviarMsgBtn.addEventListener('click', () => {
-        window.location.href = '/page/chat.html';
+        window.location.href = 'chat.html';
     });
 }

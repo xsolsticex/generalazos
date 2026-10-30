@@ -22,12 +22,12 @@ const saltarSpan = document.getElementById('saltarSpan');
 
 if (siguienteBtn) {
     siguienteBtn.addEventListener('click', () => {
-        window.location.href = '/page/principal.html';
+        window.location.href = 'principal.html';
     });
 }
 
 if (saltarSpan) {
     saltarSpan.addEventListener('click', () => {
-        window.location.href = '/page/principal.html';
+        window.location.href = 'principal.html';
     });
 }

@@ -47,6 +47,6 @@ if (unirse) {
 
 if (back) {
     back.addEventListener("click", () => {
-        window.location.href = "/page/principal.html";
+        window.location.href = "principal.html";
     });
 }

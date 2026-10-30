@@ -21,7 +21,7 @@ if (avatarParam) {
 
 if (backBtn) {
     backBtn.addEventListener('click', () => {
-        window.location.href = '/page/mensajes.html';
+        window.location.href = 'mensajes.html';
     });
 }
 

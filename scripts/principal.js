@@ -15,7 +15,7 @@ if (cards.length > 0) {
             const time = item.querySelector(".ubicacion .meta-item:last-child span")?.textContent || "10:00";
             const datetime = `${day} · ${time}`;
 
-            const url = `/page/actividad.html?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(desc)}&image=${encodeURIComponent(image)}&category=${encodeURIComponent(category)}&distance=${encodeURIComponent(distance)}&datetime=${encodeURIComponent(datetime)}`;
+            const url = `actividad.html?title=${encodeURIComponent(title)}&desc=${encodeURIComponent(desc)}&image=${encodeURIComponent(image)}&category=${encodeURIComponent(category)}&distance=${encodeURIComponent(distance)}&datetime=${encodeURIComponent(datetime)}`;
             window.location.href = url;
         });
     });
@@ -23,13 +23,13 @@ if (cards.length > 0) {
 
 if (profile) {
     profile.addEventListener("click", () => {
-        window.location.href = "/page/perfil.html";
+        window.location.href = "perfil.html";
     });
 }
 
 if (perfil) {
     perfil.addEventListener("click", () => {
-        window.location.href = "/page/perfil.html";
+        window.location.href = "perfil.html";
     });
 }
 
@@ -57,7 +57,7 @@ const navExplorar = document.getElementById("nav-explorar");
 const navMensajes = document.getElementById("nav-mensajes");
 const navPerfil = document.getElementById("nav-perfil");
 
-if (navInicio) navInicio.addEventListener("click", () => window.location.href = "/page/principal.html");
-if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "/page/explorar.html");
-if (navMensajes) navMensajes.addEventListener("click", () => window.location.href = "/page/mensajes.html");
-if (navPerfil) navPerfil.addEventListener("click", () => window.location.href = "/page/perfil.html");
+if (navInicio) navInicio.addEventListener("click", () => window.location.href = "principal.html");
+if (navExplorar) navExplorar.addEventListener("click", () => window.location.href = "explorar.html");
+if (navMensajes) navMensajes.addEventListener("click", () => window.location.href = "mensajes.html");
+if (navPerfil) navPerfil.addEventListener("click", () => window.location.href = "perfil.html");
