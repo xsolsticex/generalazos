@@ -8,7 +8,7 @@ if (cards.length > 0) {
         item.addEventListener("click", () => {
             const title = item.querySelector(".description-title p")?.textContent || "Actividad";
             const desc = item.querySelector(".description > p")?.textContent || "Descripción de la actividad";
-            const image = item.querySelector("img")?.src || "/images/background3.png";
+            const image = item.querySelector("img")?.src || "../images/background3.png";
             const category = item.querySelector(".categoria")?.textContent || "General";
             const distance = item.querySelector(".ubicacion .meta-item span")?.textContent || "1.0 Km";
             const day = item.querySelector(".ubicacion .dia")?.textContent || "Hoy";

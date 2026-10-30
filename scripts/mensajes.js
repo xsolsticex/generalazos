@@ -5,7 +5,7 @@ if (chatItems.length > 0) {
     chatItems.forEach(item => {
         item.addEventListener("click", () => {
             const name = item.getAttribute("data-name") || "Chat";
-            const avatar = item.getAttribute("data-avatar") || "/images/icono_perfil_usuario.svg";
+            const avatar = item.getAttribute("data-avatar") || "../images/icono_perfil_usuario.svg";
             window.location.href = `chat.html?name=${encodeURIComponent(name)}&avatar=${encodeURIComponent(avatar)}`;
         });
     });
