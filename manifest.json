@@ -8,7 +8,7 @@
   "theme_color": "#8a2be2",
   "icons": [
     {
-      "src": "images/heart.svg",
+      "src": "images/corazon_dos_personas.svg",
       "sizes": "192x192 512x512",
       "type": "image/svg+xml"
     }
