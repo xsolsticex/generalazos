@@ -231,9 +231,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-weight: bold;
 }
 
-
+.username{
+    color: rgb(122,56,245);
+}
 
 .card > img {
     width: 105px;
@@ -254,7 +257,9 @@ img {
 
 .description p{
     margin: 2px;
+
 }
+
 
 .categories {
     display: flex;
