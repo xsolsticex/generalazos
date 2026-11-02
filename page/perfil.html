@@ -19,13 +19,13 @@
                 <img src="../images/icono_perfil_usuario.svg" alt="">
             </div>
             <div class="datos">
-                <span>Sofia Martinez</span>
-                <span>20 años · Estudiante</span>
+                <span id="profileName">Sofia Martinez</span>
+                <span id="profileDetails">20 años · Estudiante</span>
             </div>
 
         </div>
 
-        <button class="editar">
+        <button class="editar" id="editProfileBtn">
             <img src="../images/lapiz.svg" alt="">
         </button>
     </header>
@@ -89,6 +89,30 @@
 
         </div>
     </div>
+    
+    <!-- Modal Editar Perfil -->
+    <div class="modal-overlay" id="editModal" style="display: none;">
+        <div class="modal-content">
+            <h3>Editar Perfil</h3>
+            <div class="form-group">
+                <label for="inputName">Nombre:</label>
+                <input type="text" id="inputName" value="Sofia Martinez">
+            </div>
+            <div class="form-group">
+                <label for="inputAge">Edad:</label>
+                <input type="number" id="inputAge" value="20">
+            </div>
+            <div class="form-group">
+                <label for="inputOccupation">Ocupación:</label>
+                <input type="text" id="inputOccupation" value="Estudiante">
+            </div>
+            <div class="modal-buttons">
+                <button id="cancelModal" class="btn-cancel">Cancelar</button>
+                <button id="saveModal" class="btn-save">Guardar</button>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="icon" id="nav-inicio">
             <img src="../images/casa.svg" alt="">
